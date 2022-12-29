@@ -120,3 +120,16 @@ for (var i = 1; i < finances.length; i++) {
 }
 
 console.log(greatestIncrease);
+
+var greatestDecrease = { date: '', amount: 0 };
+
+for (var i = 1; i < finances.length; i++) {
+  var y = finances[i - 1][1] - finances[i][1];
+  if (y > greatestDecrease.amount) {
+    greatestDecrease.date = finances[i][0];
+    greatestDecrease.amount = y;
+  }
+}
+
+greatestDecrease.amount *= -1;
+console.log(greatestDecrease);
