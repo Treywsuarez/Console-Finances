@@ -89,4 +89,11 @@ var finances = [
 
 
 var totalMonths = finances.length;
-console.log(totalMonths);
+console.log("Total Months: " + totalMonths);
+
+var netTotal = 0;
+for(var finance of finances){
+    netTotal +=finance[1];
+}
+
+console.log("Total: " + `$${netTotal}`);
