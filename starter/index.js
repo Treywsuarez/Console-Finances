@@ -107,3 +107,16 @@ for (var i = 1; i < finances.length; i++) {
 var averageChange = totalChange / (finances.length - 1);
 var roundedAverageChange = Math.round(averageChange * 100) / 100;
 console.log("Average Change: " + `$${roundedAverageChange}`);
+
+
+var greatestIncrease = { date: '', amount: 0 };
+
+for (var i = 1; i < finances.length; i++) {
+  var x = finances[i][1] - finances[i - 1][1];
+  if (x > greatestIncrease.amount) {
+    greatestIncrease.date = finances[i][0];
+    greatestIncrease.amount = x;
+  }
+}
+
+console.log(greatestIncrease);
