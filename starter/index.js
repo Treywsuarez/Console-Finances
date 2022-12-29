@@ -87,10 +87,11 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-
+// Total number of months in dataset
 var totalMonths = finances.length;
 console.log("Total Months: " + totalMonths);
 
+//The net total amount of Profit/Losses over the entire period.
 var netTotal = 0;
 for(var finance of finances){
     netTotal +=finance[1];
@@ -98,6 +99,7 @@ for(var finance of finances){
 
 console.log("Total: " + `$${netTotal}`);
 
+// The average change in Profit/Losses over the entire period.
 var totalChange = 0;
 
 for (var i = 1; i < finances.length; i++) {
@@ -105,10 +107,11 @@ for (var i = 1; i < finances.length; i++) {
 }
 
 var averageChange = totalChange / (finances.length - 1);
-var roundedAverageChange = Math.round(averageChange * 100) / 100;
+// Adjust to 2 decimal places
+var roundedAverageChange = Math.round(averageChange * 100) / 100; 
 console.log("Average Change: " + `$${roundedAverageChange}`);
 
-
+// The greatest increase in profits (date and amount)
 var greatestIncrease = { date: '', amount: 0 };
 
 for (var i = 1; i < finances.length; i++) {
@@ -121,6 +124,7 @@ for (var i = 1; i < finances.length; i++) {
 
 console.log(greatestIncrease);
 
+// The greatest decrease in losses (date and amount)
 var greatestDecrease = { date: '', amount: 0 };
 
 for (var i = 1; i < finances.length; i++) {
@@ -131,5 +135,6 @@ for (var i = 1; i < finances.length; i++) {
   }
 }
 
+// Adjust to show (-) symbol to represent losses
 greatestDecrease.amount *= -1;
 console.log(greatestDecrease);
