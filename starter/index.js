@@ -97,3 +97,13 @@ for(var finance of finances){
 }
 
 console.log("Total: " + `$${netTotal}`);
+
+var totalChange = 0;
+
+for (var i = 1; i < finances.length; i++) {
+  totalChange += finances[i][1] - finances[i - 1][1];
+}
+
+var averageChange = totalChange / (finances.length - 1);
+var roundedAverageChange = Math.round(averageChange * 100) / 100;
+console.log("Average Change: " + `$${roundedAverageChange}`);
