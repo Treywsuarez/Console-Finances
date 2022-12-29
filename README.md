@@ -14,7 +14,7 @@ The calculations ran return the following:
 
 # Usage
 
-The project has been deployed on GitHub pages and can be accessed via this link:
+The project has been deployed on GitHub pages and can be accessed via this link: https://treywsuarez.github.io/Console-Finances/
 
 To view the results of the calculations, use Google Chrome, hit inspect and open the console. 
 
