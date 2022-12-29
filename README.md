@@ -18,9 +18,11 @@ The project has been deployed on GitHub pages and can be accessed via this link:
 
 To view the results of the calculations, use Google Chrome, hit inspect and open the console. 
 
-You will see the results displayed below from my screenshot
+You will see the results displayed resembling my screenshots below:
 
 ![My Image](./images/Screenshot%202022-12-29%20at%2019.52.15.png)
+
+![My Image](./images/Screenshot%202022-12-29%20at%2020.05.11.png)
 
 
 
