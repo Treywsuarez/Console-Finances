@@ -20,9 +20,7 @@ To view the results of the calculations, use Google Chrome, hit inspect and open
 
 You will see the results displayed resembling my screenshots below:
 
-![My Image](./images/Screenshot%202022-12-29%20at%2019.52.15.png)
-
-![My Image](./images/Screenshot%202022-12-29%20at%2020.05.11.png)
+![console finances image](./images/Screenshot%202023-02-24%20at%2018.41.08.png)
 
 
 
